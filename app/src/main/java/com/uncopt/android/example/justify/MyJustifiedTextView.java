@@ -35,9 +35,7 @@ public class MyJustifiedTextView extends JustifiedTextView {
     super.onAttachedToWindow();
     // setTextIsSelectable doesn't work unless the text view is attached to the window
     // because it uses the window layout params to check if it can display the handles.
-    if (Build.VERSION.SDK_INT > 10) {
-      setTextIsSelectable(true);
-    }
+    setTextIsSelectable(true);
   }
 
   // We want our text to be selectable, but we still want links to be clickable.

@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
 group='com.github.praveenb'
-def currentVersion = 5
+def currentVersion = 6
 
 android {
     compileSdkVersion 28
@@ -20,7 +20,7 @@ android {
     }
 
 }
-
+/*
 task javadoc(type: Javadoc) {
     source = android.sourceSets.main.java.srcDirs
 }
@@ -43,7 +43,7 @@ artifacts {
     archives classesJar
     archives sourcesJar
     archives javadocJar
-}
+}*/
 
 //def localProp(key) {
 //    def props = new Properties()
